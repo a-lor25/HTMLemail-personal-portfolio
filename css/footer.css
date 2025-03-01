@@ -55,7 +55,6 @@ footer .skills-div {
   color: white;
   transition: color  0.25s;
   vertical-align: middle;
- /*NEED TO ALIGN THIS TO THE BOTTOM!*/
 }
 
 #backToTop:hover {
@@ -67,8 +66,4 @@ footer .skills-div {
     width: 18px;
     height: 18px;
   }
-
-  /* footer .contact-div ion-icon:hover {
-    transform: translateY(-4px);
-  } not sure why this is here */
 }
