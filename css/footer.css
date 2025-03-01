@@ -1,0 +1,74 @@
+footer {
+  background: rgb(120, 120, 120);
+  padding-top: 10px;
+  padding-bottom: 10px;
+  
+}
+
+.footer-div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+footer ion-icon {
+  width: 32px;
+  height: 32px;
+  vertical-align: middle;
+}
+
+footer .contact-div a {
+  margin-left: 10px;
+}
+
+footer .contact-div ion-icon {
+  transition: 0.5s;
+}
+
+footer .contact-div ion-icon:hover {
+  transform: translateY(-6px);
+}
+
+footer .skills-div {
+  margin-right: 10px;
+}
+
+.contact-div,
+.skills-div {
+  display: inline-block;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+
+.contact-div img,
+.skills-div img {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+#backToTop {
+  font-size: 12px;
+  font-weight: bold;
+  color: white;
+  transition: color  0.25s;
+  vertical-align: middle;
+ /*NEED TO ALIGN THIS TO THE BOTTOM!*/
+}
+
+#backToTop:hover {
+  color: rgb(150, 20, 41);
+}
+
+@media (max-width: 426px) {
+  footer ion-icon {
+    width: 18px;
+    height: 18px;
+  }
+
+  /* footer .contact-div ion-icon:hover {
+    transform: translateY(-4px);
+  } not sure why this is here */
+}

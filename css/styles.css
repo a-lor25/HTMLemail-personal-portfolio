@@ -1,0 +1,387 @@
+html {
+  scroll-behavior: smooth;
+}
+
+/*for later, if decide to change bakcground to black,
+body{
+  background-color: black;
+}*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: merriweather, arial, sans-serif;
+}
+
+/*Might need to add "CSS Var"
+:root {
+  --background-color;
+}
+*/
+
+a {
+  text-decoration: none;
+  color: black;
+  transition: color 0.25s;
+}
+
+.navbar {
+  background-color: darkgray;
+}
+
+#logo {
+  font-size: 32px;
+  font-weight: bold;
+  color: rgb(150, 20, 41);
+}
+
+#logo::first-letter {
+  font-size: 50px;
+  font-weight: bold;
+  border: 2px solid rgb(150, 20, 41);
+  border-right: transparent;
+  padding-left: 4px;
+  color: black;
+}
+
+header {
+  position: relative;
+}
+
+.navbar nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 36px;
+  align-items: center;
+  /*width: 100%;
+  height: 60px;
+  max-width: 1200px;
+  */
+}
+
+
+nav ul {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 72px;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+nav ul li {
+  list-style-type: none;
+  transition: color 0.3s ease-in-out;
+  animation: slideDown 1.25s ease;
+}
+
+@keyframes slideDown{
+  from{
+    transform: translateY(-100px);
+  }
+}
+
+nav ul li a:hover,
+.dropdown-menu li a:hover {
+  color: rgb(150, 20, 41);
+  text-decoration: underline;
+  text-decoration-color: black;
+  font-weight: bold;
+}
+
+.navbar .toggle-btn {
+  font-size: 30px;
+  cursor: pointer;
+  display: none;
+}
+
+/* nav label {
+  font-size: 32px;
+  color: white;
+  cursor: pointer;
+} */
+
+/* .hire-link,
+.intro-section a {
+  text-decoration: none;
+  color: black;
+}  "------UNSURE WHY THIS WAS ENTERED-----" */
+
+.hire-link,
+.portfolio-link {
+  font-size: 24px;
+  background-color: rgb(150, 20, 41);
+  border: 1px solid black;
+  border-radius: 20px;
+  padding: 6px 14px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.hire-link {
+ /* animation: slideLeft 3.25s ease;*/
+  /* animation: rotate 2.75s ease; */
+  animation: glow 5s infinite ease;
+} 
+
+
+@keyframes glow {
+  50%{box-shadow: 0px 0px 60px hsl(153, 90%, 48%);
+  }  
+}
+
+.hire-link:hover,
+.portfolio-link:hover {
+  background-color: transparent;
+}
+
+/*Dropdown*/
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  right: 36px;
+  top: 60px;
+  height: 0;
+  width: 175px;
+  background: rgba(255, 255, 255, 0.70);
+  /*backdrop-filter: blur(15px); if has image background*/
+  border-radius: 10px;
+  overflow: hidden;
+  transition: height .2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.dropdown-menu.open {
+  height: 195px;
+}
+
+.dropdown-menu li {
+  padding: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.dropdown-menu .background-color:hover{
+  background-color: rgb(193, 193, 193);
+}
+
+.dropdown-menu .hire-link {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+/* .intro-section {
+  position: absolute;
+  top: 45%;
+  left: 8%;
+} */
+
+h1 {
+  font-size: 40px;
+}
+
+h1 span {
+  color: rgb(150, 20, 41);
+}
+
+.hero-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: darkgray;
+  padding-top: 90px;
+  padding-bottom: 90px;
+}
+
+.intro-section {
+  animation: slideRight 2.2s ease;
+}
+
+@keyframes slideRight{
+  from{
+    transform: translateX(-800px);
+  }
+}
+
+.intro-section p {
+  font-size: 24px;
+  line-height: 32px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+/* floating effect for .my-pic image */
+
+.my-pic img {
+  border-radius: 50%;
+  animation: floating 4.3s ease-in-out infinite;
+}
+
+@keyframes floating {
+  0% {
+    transform: translateX(0px);
+  }
+  50% {
+    transform: translateX(-30px);
+  }
+  100% {
+    transform: translateX(0px);
+  }
+}
+
+
+@media (max-width: 1200px) {
+  .my-pic {
+    right: 60px;
+  }
+}
+
+@media (max-width: 1055px) {
+  /*need to add a "hero-section container" to 'HTML', use the following code: flec-direction: column-reverse; align-items: center; and padding-bottom: 32px; video starts at 1:14:20*/
+
+  nav ul {
+    font-size: 20px;
+    column-gap: 46px;
+  }
+
+  /*.hire-link {
+    font-size: 16px;
+    padding: 4px 10px;
+  } add later if needed */
+
+  .intro-section p {
+    font-size: 22px;
+  }
+  
+  .hero-section .my-pic img {
+    width: 290px;
+  }
+
+  .cards-container {
+    display: block;
+  }
+}
+
+@media (max-width: 880px) {
+  .navbar ul,
+  .navbar .hire-link {
+    display: none;
+  }
+
+  nav ul li, .hire-link, .intro-section, .my-pic img {
+    animation: none;
+  }
+
+  .navbar .toggle-btn{
+    display: block;
+  }
+
+  .dropdown-menu {
+    display: block;
+  }
+
+  /*.navbar nav {
+    padding: 10px 50px;
+  }
+  .logo {
+    font-size: 28px
+  }
+  nav ul li {
+    display: block;
+    padding: 0;
+  }*/
+
+  .hero-section {
+    flex-direction: column;
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+
+ .intro-section {
+    order: 2;
+  }
+
+  h1 {
+    font-size: 32px;
+  }
+
+  .intro-section p {
+    font-size: 18px;
+  }
+
+  .hero-section .my-pic {
+    order: 1;
+    margin-bottom: 20px;
+  }
+  
+  .hero-section .my-pic img {
+    width: 250px;
+  }
+
+  .hire-link,
+  .portfolio-link {
+    font-size: 18px;
+    padding: 4px 8px;
+  }
+}
+
+@media (max-width: 600px) {
+  .hero-section .my-pic img {
+    width: 180px;
+  }
+
+  .dropdown-menu {
+    width: 145px;
+  }
+  
+  .dropdown-menu.open {
+    height: 175px;
+  }
+  
+  .dropdown-menu li {
+    font-size: 14px;
+  }
+
+  .hire-link,
+  .portfolio-link {
+    font-size: 15px;
+    padding: 3px 6px;
+  }
+}
+
+@media (max-width: 426px) {
+  .hero-section .my-pic img {
+    width: 165px;
+  }
+
+  .dropdown-menu {
+    width: 100%;
+    margin-top: 24px;
+    right: 0;
+  }
+
+  .hire-link,
+  .portfolio-link {
+    font-size: 16px;
+  }
+
+  .intro-section h1 {
+    font-size: 20px;
+  }
+
+  .intro-section {
+   padding-left: 13px;
+   padding-right: 13px;
+  }
+
+  .intro-section p {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 392px) {
+  .hero-section {
+    text-align: center;
+  }
+}
