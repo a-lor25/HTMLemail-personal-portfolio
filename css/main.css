@@ -69,6 +69,22 @@
   background-color: rgb(150, 20, 41);
 }
 
+.individual-container{
+  position: relative;
+}
+
+.pending-project{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateY(-50%);
+  transform: translateX(-50%);
+  color: rgb(234, 29, 29);
+  font-size: 2.2vw;
+  background-color: rgb(128, 128, 128, 0.4);
+  padding: 4px 8px;
+}
+
 .portfolio-container h4{
   text-align: center;
   color: rgb(160, 160, 160);
@@ -164,6 +180,10 @@ form {
 @media (max-width: 600px) {
   .portfolio-div {
     grid-template-columns: 1fr;
+  }
+
+  .pending-project{
+    font-size: 4vw;
   }
 }
 
