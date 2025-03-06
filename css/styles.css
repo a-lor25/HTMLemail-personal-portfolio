@@ -28,6 +28,7 @@ a {
 
 .navbar {
   background-color: darkgray;
+  line-height: 0;
 }
 
 #logo {
@@ -178,7 +179,6 @@ h1 span {
   background-color: darkgray;
   padding-top: 90px;
   padding-bottom: 90px;
-  line-height: 0;
 }
 
 .intro-section {
