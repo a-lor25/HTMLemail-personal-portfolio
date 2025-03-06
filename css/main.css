@@ -1,0 +1,222 @@
+#about,
+#contact {
+  margin-top: 80px;
+}
+
+#about,
+#portfolio,
+#contact {
+  font-size: 36px;
+  text-align: center;
+  /*for later, if decide to change bakcgorund to black 
+  color: white;*/
+}
+
+.cards-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-top: 30px;
+}
+
+.card-header {
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.cards-div {
+  padding: 10px 20px;
+}
+
+/*for later, if decide to change bakcgorund to black
+.cards-div p {
+  color: white;
+}*/
+
+.card-description {
+  line-height: 28px;
+}
+
+.card-button {
+  font-weight: bold;
+  background-color: darkgray;
+  padding: 6px 12px;
+  border: 1px solid;
+  border-radius: 8px;
+  margin-top: 10px;
+  cursor: pointer;
+  transition: background-color  0.25s;
+}
+
+.card-button:hover,
+.submit-btn:hover {
+  background-color: transparent;
+}
+
+.react-text {
+  font-weight: bold;
+  color: rgb(8 126 164);
+}
+
+.bootstrap-text {
+  font-weight: bold;
+  color: rgb(113, 44, 249);
+}
+
+.portfolio-container {
+  padding-top: 40px;
+  background-color: rgb(150, 20, 41);
+}
+
+.individual-container{
+  position: relative;
+}
+
+.pending-project{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateY(-50%);
+  transform: translateX(-50%);
+  color: rgb(234, 29, 29);
+  font-size: 2.2vw;
+  background-color: rgb(128, 128, 128, 0.4);
+  padding: 4px 8px;
+}
+
+.portfolio-container h4{
+  text-align: center;
+  color: rgb(160, 160, 160);
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.portfolio-div {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 16px;
+  padding-top: 40px;
+}
+
+.portfolio-div a img{
+  width: 100%;
+  height: 100%;
+  opacity: 0.7;
+  transition: opacity .35s ease;
+}
+
+.portfolio-div a img:hover {
+  opacity: 1;
+}
+
+form {
+  text-align: center;
+ }
+ 
+ input {
+   width: 500px;
+   margin-bottom: 12px;
+   outline: none;
+   padding-left: 4px;
+ }
+ 
+ .form-box {
+   width: 500px;
+   height: 275px;
+   vertical-align: top;
+   outline: none;
+   padding-left: 4px;
+   margin-bottom: 20px;
+ }
+ 
+ .submit-btn {
+   font-size: 24px;
+   padding: 8px 16px;
+   border: 1px solid;
+   border-radius: 6px;
+   background-color: darkgray;
+   cursor: pointer;
+   transition: background-color 0.25s;
+   margin-bottom: 80px;
+ }
+
+
+@media (max-width: 1055px) {
+  .cards-container {
+    display: block;
+  }
+}
+
+@media (max-width: 880px) {
+  .card-header {
+    font-size: 16px;
+  }
+
+  .card-description {
+    font-size: 14px;
+  }
+
+  #about,
+  #portfolio,
+  #contact {
+    font-size: 28px;
+  }
+
+  input,
+  .form-box {
+    width: 375px;
+  }
+
+  .submit-btn {
+    font-size: 20px;
+    padding: 6px 14px;
+  }
+}
+
+@media (max-width: 600px) {
+  .portfolio-div {
+    grid-template-columns: 1fr;
+  }
+
+  .pending-project{
+    font-size: 4vw;
+  }
+}
+
+@media (max-width: 426px) {
+  input {
+    width: 315px;
+    margin-bottom: 12px;
+  }
+  
+  .form-box {
+    width: 315px;
+    height: 205px;
+  } 
+  
+  .submit-btn {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 326px) {
+  input {
+    width: 290px;
+    margin-bottom: 12px;
+    outline: none;
+    padding-left: 4px;
+  }
+  
+  .form-box {
+    width: 290px;
+    height: 195px;
+  } 
+  
+  .submit-btn {
+    font-size: 16px;
+  }
+}
