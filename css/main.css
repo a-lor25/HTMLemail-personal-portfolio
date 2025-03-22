@@ -19,19 +19,19 @@
   text-align: center;
 }
 
+.cards-div {
+  display: inline-block;
+  vertical-align: top;
+  max-width: 560px;
+  padding: 10px 20px;
+}
+
 .card-header {
   font-size: 20px;
   font-weight: bold;
   text-align: center;
   margin-top: 30px;
   margin-bottom: 24px;
-}
-
-.cards-div {
-  display: inline-block;
-  vertical-align: top;
-  max-width: 560px;
-  padding: 10px 20px;
 }
 
 /*for later, if decide to change bakcgorund to black
@@ -43,20 +43,8 @@
   line-height: 28px;
 }
 
-.card-button {
-  font-weight: bold;
-  background-color: darkgray;
-  padding: 6px 12px;
-  border: 1px solid;
-  border-radius: 8px;
-  margin-top: 10px;
-  cursor: pointer;
-  transition: background-color  0.25s;
-}
-
-.card-button:hover,
-.submit-btn:hover {
-  background-color: transparent;
+.education {
+  margin-bottom: 20px;
 }
 
 .react-text {
@@ -69,8 +57,8 @@
   color: rgb(113, 44, 249);
 }
 
-.portfolio-container {
-  padding-top: 40px;
+.project-container {
+  padding-top: 30px;
   background-color: rgb(150, 20, 41);
 }
 
