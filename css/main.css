@@ -13,19 +13,24 @@
 }
 
 .cards-container {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  margin-top: 30px;
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+  text-align: center;
 }
 
 .card-header {
   font-size: 20px;
   font-weight: bold;
   text-align: center;
-  margin-bottom: 30px;
+  margin-top: 30px;
+  margin-bottom: 24px;
 }
 
 .cards-div {
+  display: inline-block;
+  vertical-align: top;
+  max-width: 560px;
   padding: 10px 20px;
 }
 
