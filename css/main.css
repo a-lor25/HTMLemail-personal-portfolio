@@ -4,7 +4,7 @@
 }
 
 #about,
-#portfolio,
+#projects,
 #contact {
   font-size: 36px;
   text-align: center;
@@ -166,7 +166,7 @@ form {
   }
 
   #about,
-  #portfolio,
+  #projects,
   #contact {
     font-size: 28px;
   }
