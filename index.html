@@ -109,11 +109,13 @@
     </div> 
   
     <h2 id="contact">Contact</h2>
-    <form action="mailto:alor54901@gmail.com" method="post" enctype="text/plain">
+    <form action="https://api.web3forms.com/submit" method="post">
+      <input type="hidden" name="access_key" value="33c6f6a3-67c9-4486-9f72-b15fedcd47fd">
       <input type="text" placeholder="Name" required><br>
       <input type="email" placeholder="jonDoe123@gmail.com" required><br>
       <input type="tel" placeholder="012-345-6789" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required><br>
       <textarea class="form-box" placeholder="Message"></textarea><br>
+      <input type="hidden" name="redirect" value="https://a-lor25.github.io/frontend-personal-portfolio">
       <button class="submit-btn">Send</button> <!-- add this in later onclick="
       alert(`Message Sent`)" -->
     </form>
