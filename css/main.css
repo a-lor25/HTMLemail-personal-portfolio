@@ -41,6 +41,7 @@
 
 .card-description {
   line-height: 28px;
+  text-align: left;
 }
 
 .education {
@@ -213,3 +214,4 @@ form {
     font-size: 16px;
   }
 }
+
