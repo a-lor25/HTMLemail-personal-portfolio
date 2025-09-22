@@ -27,6 +27,7 @@
 }
 
 .card-header {
+  text-decoration: underline;
   font-size: 20px;
   font-weight: bold;
   text-align: center;
@@ -214,4 +215,5 @@ form {
     font-size: 16px;
   }
 }
+
 
