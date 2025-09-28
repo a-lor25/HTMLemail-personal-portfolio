@@ -166,8 +166,7 @@ h1 span {
   align-items: center;
   justify-content: space-around;
   background-color: darkgray;
-  padding-top: 90px;
-  padding-bottom: 90px;
+  padding: 90px 0;
 }
 
 .intro-section {
@@ -183,8 +182,7 @@ h1 span {
 .intro-section p {
   font-size: 24px;
   line-height: 32px;
-  margin-top: 20px;
-  margin-bottom: 20px;
+  margin: 20px 0;
 }
 
 /* floating effect for .my-pic image */
@@ -230,10 +228,6 @@ h1 span {
   
   #hero-section .my-pic img {
     width: 290px;
-  }
-
-  .cards-container {
-    display: block;
   }
 }
 
@@ -348,3 +342,4 @@ h1 span {
     text-align: center;
   }
 }
+
