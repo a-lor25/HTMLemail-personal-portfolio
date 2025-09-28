@@ -68,7 +68,7 @@
   position: relative;
 }
 
-#portfolio {
+#project {
   padding-top: 20px;
 }
 
@@ -167,7 +167,7 @@ form {
     font-size: 14px;
   }
 
-  .portfolio-container {
+  .project-container {
     padding-top: 12px;
   }
 
@@ -198,9 +198,9 @@ form {
     grid-template-columns: 1fr;
   }
 
-  .pending-project{
+  /**.pending-project{
     font-size: 4vw;
-  }
+  }**/
 }
 
 @media (max-width: 426px) {
@@ -236,6 +236,7 @@ form {
     font-size: 16px;
   }
 }
+
 
 
 
