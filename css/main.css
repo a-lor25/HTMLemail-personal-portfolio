@@ -13,10 +13,11 @@
 }
 
 .cards-container {
+  display: grid:
+  grid-template-columns: 1fr 1fr;
   width: 100%;
   max-width: 1200px;
   margin: auto;
-  text-align: center;
 }
 
 .cards-div {
@@ -49,7 +50,7 @@
   margin-bottom: 20px;
 }
 
-.react-text {
+/**.react-text {
   font-weight: bold;
   color: rgb(8 126 164);
 }
@@ -57,7 +58,7 @@
 .bootstrap-text {
   font-weight: bold;
   color: rgb(113, 44, 249);
-}
+}**/
 
 .project-container {
   padding-top: 30px;
@@ -95,18 +96,14 @@
 .project-container h4{
   text-align: center;
   color: rgb(160, 160, 160);
-  padding-left: 10px;
-  padding-right: 10px;
+  padding: 0 10px;
 }
 
 .project-div {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 16px;
-  padding-left: 20px;
-  padding-right: 20px;
-  padding-bottom: 16px;
-  padding-top: 40px;
+  padding: 40px 20px 16px;
 }
 
 .project-div a img{
@@ -152,12 +149,6 @@ form {
  }
 
 
-@media (max-width: 1055px) {
-  .cards-container {
-    display: block;
-  }
-}
-
 @media (max-width: 880px) {
   .card-header {
     font-size: 16px;
@@ -190,6 +181,17 @@ form {
   .submit-btn {
     font-size: 20px;
     padding: 6px 14px;
+  }
+}
+
+@media (max-width: 768px) {
+  .cards-container {
+    display: block;
+    text-align: center;
+  }
+
+  .card-description {
+    text-align: left !important;
   }
 }
 
@@ -236,6 +238,7 @@ form {
     font-size: 16px;
   }
 }
+
 
 
 
