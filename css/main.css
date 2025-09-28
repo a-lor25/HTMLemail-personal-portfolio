@@ -68,7 +68,19 @@
   position: relative;
 }
 
-.pending-project{
+#portfolio {
+  padding-top: 20px;
+}
+
+.project-type {
+  text-align: center;
+  font-size: 24px;
+  margin: 40px 0 0;
+  color: #fffffe;
+  letter-spacing: 2px;
+}
+
+/**.pending-project{
   position: absolute;
   top: 50%;
   left: 50%;
@@ -78,7 +90,7 @@
   font-size: 2.2vw;
   background-color: rgb(128, 128, 128, 0.4);
   padding: 4px 8px;
-}
+}**/
 
 .project-container h4{
   text-align: center;
@@ -155,10 +167,19 @@ form {
     font-size: 14px;
   }
 
+  .portfolio-container {
+    padding-top: 12px;
+  }
+
   #about,
   #projects,
   #contact {
     font-size: 28px;
+  }
+
+  .project-type {
+    font-size: 20px;
+    margin-top: 25px;
   }
 
   input,
@@ -215,5 +236,6 @@ form {
     font-size: 16px;
   }
 }
+
 
 
