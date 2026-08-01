@@ -12,8 +12,6 @@
 #contact {
   font-size: 36px;
   text-align: center;
-  /*for later, if decide to change bakcgorund to black 
-  color: white;*/
 }
 
 .cards-container {
@@ -43,40 +41,9 @@
 }
 
 
-/*for later, if decide to change bakcgorund to black
-.cards-div p {
-  color: white;
-}*/
-
 .card-description {
   line-height: 20px;
 }
-
-/* for later, if needed
- .card-button {
-  font-weight: bold;
-  background-color: darkgray;
-  padding: 6px 12px;
-  border: 1px solid;
-  border-radius: 8px;
-  margin-top: 10px;
-  cursor: pointer;
-  transition: background-color  0.25s;
-}
-
-.card-button:hover {
-  background-color: transparent;
-} 
-
-.react-text {
-  font-weight: bold;
-  color: rgb(8 126 164);
-}
-
-.bootstrap-text {
-  font-weight: bold;
-  color: rgb(113, 44, 249);
-} */
 
 .portfolio-container {
   padding-top: 30px;
@@ -87,25 +54,6 @@
 .individual-container{
   position: relative;
 }
-
-/** .view-project{
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translateY(-50%);
-  transform: translateX(-50%);
-  color: rgb(40, 49, 150);
-  font-size: 2.4vw;
-  font-weight: bold;
-  background-color: rgb(128, 128, 128, 0.8);
-  padding: 4px 8px;
-  transition: background-color .35s ease;
-  cursor: pointer;
-}
-
-.view-project:hover {
-  background-color: rgb(240, 236, 236);
-} **/
 
 #projects {
   padding-top: 20px;
