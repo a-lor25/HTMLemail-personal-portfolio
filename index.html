@@ -6,14 +6,15 @@
   <title>My Personal Website</title>
 
   <link rel="stylesheet" href="css/styles.css">
-  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/main2.css">
   <link rel="stylesheet" href="css/footer.css">
-
+ 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
-  
+
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
 
 </head>
 <body>
@@ -21,15 +22,13 @@
     <div class="navbar">  
       <nav>
         <h1 id="logo">A Lor</h1>
-        
         <ul>
           <li><a id="homepage" href="#home">Home</a></li>
           <li><a href="#about">About</a></li>
-          <li><a href="#projects">Projects</a></li>
+          <li><a href="#portfolio">Projects</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
-        
-        <a class="hire-link" href="mailto:alor54901@gmail.com">Hire Me</a>
+        <a class="hire-link" href="mailto:alor_920@hotmail.com">Hire Me</a>
         <div class="toggle-btn" title="Menu">
           <i class="fa-solid fa-bars"></i>
         </div>
@@ -39,7 +38,7 @@
     <div class="dropdown-menu">
       <li class="background-color"><a id="homepage" href="#home">Home</a></li>
       <li class="background-color"><a href="#about">About</a></li>
-      <li class="background-color"><a href="#projects">Projects</a></li>
+      <li class="background-color"><a href="#portfolio">Projects</a></li>
       <li class="background-color"><a href="#contact">Contact</a></li>
       <li><a class="hire-link" href="mailto:alor54901@gmail.com">Hire Me</a></li>
     </div>
@@ -48,8 +47,8 @@
     <div id="hero-section">
       <div class="intro-section">
         <h1>Hello, I'm <span>A Lor</span></h1>
-        <p>This is my official website to show<br>my experience in Email Development.</p>
-        <a class="portfolio-link" href="#about">About Me</a>
+        <p>This is my official wesbite to show<br>my work experience in Frontend Development.</p>
+        <a class="portfolio-link" href="#about">My Resume</a>
       </div>
       <div class="my-pic">
         <img src="images/aye.png" alt="A Lor">
@@ -61,80 +60,114 @@
     <h2 id="about">About</h2>
     <div class="cards-container">
       <div class="cards-div">
-        <p class="card-header">About Me</p>
-        <p class="card-description">My name is A Lor. Yes, you read that right. My first name really is just 1 letter "<b>A</b>." I am a self-taught Email Developer based out of Sun Prairie, WI eager to enhance and develop more skills. I am ready to build beautiful, responsive emails for your clients!</p>
-        <!-- for later if needed. <button class="card-button">More info</button> -->
+        <h3 class="card-header">About Me</h3>
+        <p class="card-description">I am a disciplined, self-taught Email Developer who specializes in turning design concepts into pixel-perfect, responsive HTML and MJML code that renders beautifully in any inbox. Based out of Sun Prairie, WI, I build clean, high-performance email assets ready for production and remote deployment.</p>
+
+        <h3 style="padding: 20px 0 10px;">Technical Skillset</h3>
+        <ul>
+          <li class="skills" style="padding: 5px 0; text-align: left;"><strong>Code & Frameworks:</strong> HTML, inline CSS, Responsive Design, and the MJML framework for rapid, efficient development.</li>
+          <li class="skills" style="padding: 5px 0; text-align: left;"><strong>Testing & Quality Assurance:</strong> Comprehensive rendering and compatibility verification across multiple email clients using htmltest.email.</li>
+          <li class="skills" style="padding: 5px 0; text-align: left;"><strong>Asset Optimization:</strong> Media editing, cropping, and compression via GIMP to ensure ultra-fast loading times and reliable delivery.</li>
+        </ul>
       </div>
 
       <div class="cards-div">
-        <p class="card-header">Skills</p>
-        <p class="card-description">My focus is on Email Development. The skils that I have obtained are <b style="text-decoration: underline;">HTML</b>, <b style="text-decoration: underline;">inline CSS</b>, <b style="text-decoration: underline;">Responsive design</b>, image editing by using <b style="text-decoration: underline;">GIMP</b> to crop, edit, and compress images for faster loading and reliable delivery, and email testing across various email clients using <b style="text-decoration: underline;">htmltest.email</b>. I also learned the <b style="text-decoration: underline;">MJML</b> framework to increase productivity and efficiency when coding emails. My projects were built from using the code editor <b style="text-decoration: underline;">VS Code</b> and the <b style="text-decoration: underline;">MJML</b> app.</p>
-      </div>
+        <h3 class="card-header">Real-World Impact</h3>
+        <p class="card-description">Through Taproot Plus, I provided 30 hours of specialized pro bono consulting valued at $6,600 for a nonprofit organization. I successfully engineered a custom, mobile-responsive donor newsletter template with a strategic call-to-action (CTA) inside the Zeffy fundraising ecosystem.</p>
 
-      <div class="cards-div">
-        <p class="card-header">Goals</p>
-        <p class="card-description">My goal is to learn an <b style="text-decoration: underline;">Email Service Provider (ESP)</b> such as <b style="text-decoration: underline;">Mailerlite</b> for email tracking, campaigns, A/B testing and automations.
-      </div>
-
-      <div class="cards-div">
-        <p class="card-header">How did I get into email development?</p>
-        <p class="card-description education">I decided to study Email development after watching a few YouTube videos about Email and Web Development and started building small projects. I've always wondered as a boy growing up, asking myself: "How are these websites built? How can one create such a beautiful, dynamic web? I must be an Albert Enstein or Da Vinci in order to build something like this!" Coming to find out all it takes is discipline and motivation. It felt great being able to build responsive emails and seeing the end result. Even though it was not an easy journey with many days of wanting to give up I kept going and told myself "I can do it!". <b>BUILD PROJECTS, KEEP PRACTICING!</b> There are still many more to learn but trust the process!</p>
-        <!-- for later if needed. <button class="card-button">More info</button> -->
-      </div>
+        <blockquote class="testimonial-quote" style="border-left: 4px solid #007acc; padding-left: 15px; margin: 20px 0; font-style: italic; color: #555; text-align: left;">
+          <p>"It was truly a pleasure to work with A on our Donor Newsletter. Although his experience was in coding HTML newsletters, he was able to transfer his skills to create a wonderful Newsletter with a practical and visually appealing design. He is detail-oriented, technically proficient... I will definitely use him again for any email development needs!"</p>
+          <cite style="display: block; margin-top: 10px; font-weight: bold; font-style: normal; color: #333;">— Gabriell Bello, Executive Director, Oasis Foundation (via Taproot Plus)</cite>
+        </blockquote>
+      </div>   
     </div>
   
-     <div class="project-container">
-      <h2 id="projects">Projects</h2>
+    <div class="portfolio-container">
+      <h2 id="projects">Personal Projects</h2>
+
       <h3 class="project-type">Transactional Emails</h3>
-      <div class="project-div">
+      <div class="portfolio-div">
         <div class="individual-container">
           <a title="View Project" href="https://a-lor25.github.io/transactionalEmail" target="_blank"><img src="images/transactionalEmail.jpg" alt="Globalshop-email"></a>
+          <div>
+            <p style="color: #fff; font-weight: bold; letter-spacing: 2px; text-decoration: underline; margin: 0;">Built with VsCode</p>
+          </div> 
         </div> 
-        <div class="individual-container">
+
+        <div class="individual-container-2">
           <a title="View Project" href="https://a-lor25.github.io/orderReceipt" target="_blank"><img src="images/orderReceipt.jpg" alt="pho3va-eats-email"></a> 
+          <div>
+            <p style="color: #fff; font-weight: bold; letter-spacing: 2px; text-decoration: underline; margin: 0;">Built with VsCode</p>
+          </div>  
         </div>   
     </div>
 
-    <div class="project-container">
+    <div class="portfolio-container">
       <h3 class="project-type">Newsletter Emails</h3>
-      <div class="project-div">
+      <div class="portfolio-div">
         <div class="individual-container">
-          <a title="View Project" href="https://a-lor25.github.io/toyAnnouncementEmail" target="_blank"><img src="images/toy-promo-email.jpg" alt="BargainToy-email"></a>
+          <a title="View Project" href="https://a-lor25.github.io/toyPromoEmail" target="_blank"><img src="images/toy-promo-email.jpg" alt="BargainToy-email"></a>
+          <div>
+            <p style="color: #fff; font-weight: bold; letter-spacing: 2px; text-decoration: underline; margin: 0;">Built with VsCode</p>
+          </div>
         </div> 
-        <div class="individual-container">
-          <a title="View Project" href="https://a-lor25.github.io/pokemonNewProducts" target="_blank"><img src="images/ProductEmail.jpg" alt="pokemonNewProducts-email"></a> 
+
+        <div class="individual-container-2">
+          <a title="View Project" href="https://a-lor25.github.io/pokemonNewProducts" target="_blank"><img src="images/ProductEmail.jpg" alt="PokemonProduct-email"></a>
+          <div>
+            <p style="color: #fff; font-weight: bold; letter-spacing: 2px; text-decoration: underline; margin: 0;">Built with MJML</p>
+          </div>    
         </div>   
     </div>
 
-    <div class="project-container">
+    <div class="portfolio-container">
       <h3 class="project-type">Promotional & Tracking Emails</h3>
-      <div class="project-div">
+      <div class="portfolio-div">
         <div class="individual-container">
-          <a title="View Project" href="https://a-lor25.github.io/iCanvasPromoEmail" target="_blank"><img src="images/iCanvasSnippet.jpg" alt="Icanvas-email"></a>
+          <a title="View Project" href="https://a-lor25.github.io/iCanvasPromoEmail" target="_blank"><img src="images/iCanvas.jpg" alt="Icanvas-email"></a>
+          <div>
+            <p style="color: #fff; font-weight: bold; letter-spacing: 2px; text-decoration: underline; margin: 0;">Built with VsCode</p>
+          </div>
+      
         </div> 
-        <div class="individual-container">
+
+        <div class="individual-container-2">
           <a title="View Project" href="https://a-lor25.github.io/trackingEmail" target="_blank"><img src="images/trackingEmail.jpg" alt="USPS-email"></a>
+          <div>
+            <p style="color: #fff; font-weight: bold; letter-spacing: 2px; text-decoration: underline; margin: 0;">Built with VsCode</p>
+          </div>
+         
         </div>   
-    </div> 
+    </div>
+    
+    <!-- End of Portfoilo -->
   
     <h2 id="contact">Contact</h2>
-    <form action="https://api.web3forms.com/submit" method="post">
+    <form action="https://api.web3forms.com/submit" method="post" enctype="text/plain">
       <input type="hidden" name="access_key" value="33c6f6a3-67c9-4486-9f72-b15fedcd47fd">
       <input type="text" name="name" placeholder="Name" required><br>
       <input type="email" name="email" placeholder="jonDoe123@gmail.com" required><br>
       <input type="tel" name="tel" placeholder="012-345-6789" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required><br>
       <textarea name="message" class="form-box" placeholder="Message" required></textarea><br>
       <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
-      <input type="hidden" name="redirect" value="https://a-lor25.github.io/HTMLemail-personal-portfolio">
-      <button class="submit-btn">Send</button>
+      <input type="hidden" name="redirect" value="personal-page.html">
+      <button type="submit" class="submit-btn">Send</button> <!-- add this in later to JS: onclick="
+      alert(`Message Sent`)" -->
     </form>
+
+
   </main>
   
   
   <footer>
     <div id="footer-div">
+
+  
       <a id="backToTop" href="#logo" >Back to top</a>
-    </div>   
+  
+
+    </div>
+    
   </footer>
 
   <!--JS-->
@@ -146,53 +179,3 @@
   </script>
 </body>
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
