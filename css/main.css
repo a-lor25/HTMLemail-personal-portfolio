@@ -1,3 +1,7 @@
+.main {
+  max-width: 100%;
+}
+
 #about,
 #contact {
   margin-top: 80px;
@@ -8,8 +12,6 @@
 #contact {
   font-size: 36px;
   text-align: center;
-  /*for later, if decide to change bakcgorund to black 
-  color: white;*/
 }
 
 .cards-container {
@@ -20,56 +22,40 @@
   margin: auto;
 }
 
-.cards-div {
-  display: inline-block;
-  vertical-align: top;
-  max-width: 560px;
-  padding: 10px 20px;
-}
-
-.card-header {
-  text-decoration: underline;
-  font-size: 20px;
-  font-weight: bold;
-  text-align: center;
-  margin-top: 30px;
-  margin-bottom: 24px;
-}
-
-/*for later, if decide to change bakcgorund to black
-.cards-div p {
-  color: white;
-}*/
-
-.card-description {
-  line-height: 28px;
-  text-align: left;
-}
-
 .education {
   margin-bottom: 20px;
 }
 
-/**.react-text {
+.card-header {
+  font-size: 20px;
   font-weight: bold;
-  color: rgb(8 126 164);
+  text-align: center;
+  margin: 30px 0 24px;
 }
 
-.bootstrap-text {
-  font-weight: bold;
-  color: rgb(113, 44, 249);
-}**/
+.cards-div {
+  display: inline-block;
+  vertical-align: top;
+  max-width: 580px;
+  padding: 10px 20px;
+}
 
-.project-container {
+
+.card-description {
+  line-height: 20px;
+}
+
+.portfolio-container {
   padding-top: 30px;
   background-color: rgb(150, 20, 41);
+  text-align: center;
 }
 
 .individual-container{
   position: relative;
 }
 
-#project {
+#projects {
   padding-top: 20px;
 }
 
@@ -81,39 +67,27 @@
   letter-spacing: 2px;
 }
 
-/**.pending-project{
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translateY(-50%);
-  transform: translateX(-50%);
-  color: rgb(234, 29, 29);
-  font-size: 2.2vw;
-  background-color: rgb(128, 128, 128, 0.4);
-  padding: 4px 8px;
-}**/
-
-.project-container h4{
+.portfolio-container h4{
   text-align: center;
   color: rgb(160, 160, 160);
   padding: 0 10px;
 }
 
-.project-div {
+.portfolio-div {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 16px;
   padding: 40px 20px 16px;
 }
 
-.project-div a img{
+.portfolio-div a img{
   width: 100%;
   height: 100%;
   opacity: 0.7;
   transition: opacity .35s ease;
 }
 
-.project-div a img:hover {
+.portfolio-div a img:hover {
   opacity: 1;
 }
 
@@ -123,6 +97,7 @@ form {
  
  input {
    width: 500px;
+   max-width: 100%;
    margin-bottom: 12px;
    outline: none;
    padding-left: 4px;
@@ -130,6 +105,7 @@ form {
  
  .form-box {
    width: 500px;
+   max-width: 100%;
    height: 275px;
    vertical-align: top;
    outline: none;
@@ -148,17 +124,20 @@ form {
    margin-bottom: 80px;
  }
 
+ .submit-btn:hover {
+  background-color: transparent;
+}
 
 @media (max-width: 880px) {
   .card-header {
     font-size: 16px;
   }
 
-  .card-description {
+  .card-description, .skills, .testimonial-quote {
     font-size: 14px;
   }
 
-  .project-container {
+  .portfolio-container {
     padding-top: 12px;
   }
 
@@ -196,13 +175,18 @@ form {
 }
 
 @media (max-width: 600px) {
-  .project-div {
+  .portfolio-div {
     grid-template-columns: 1fr;
   }
 
-  /**.pending-project{
+  .pending-project{
     font-size: 4vw;
-  }**/
+  }
+
+  .individual-container-2 img{
+    display: block;
+    padding: 20px 0 5px;
+  }
 }
 
 @media (max-width: 426px) {
@@ -238,9 +222,3 @@ form {
     font-size: 16px;
   }
 }
-
-
-
-
-
-
