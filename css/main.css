@@ -115,6 +115,7 @@ form {
  
  .submit-btn {
    font-size: 24px;
+   color: #000;
    padding: 8px 16px;
    border: 1px solid;
    border-radius: 6px;
