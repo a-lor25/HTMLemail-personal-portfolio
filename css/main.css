@@ -121,7 +121,7 @@ form {
    border-radius: 6px;
    background-color: darkgray;
    cursor: pointer;
-   transition: background-color 0.25s;
+   transition: all 0.25s;
    margin-bottom: 80px;
  }
 
