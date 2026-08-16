@@ -126,6 +126,7 @@ form {
 
  .submit-btn:hover {
   background-color: transparent;
+  color: #fff; 
 }
 
 @media (max-width: 880px) {
